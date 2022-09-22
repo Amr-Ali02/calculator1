@@ -11,14 +11,7 @@ btn.forEach((ele) => {
     dis.value = eval(tbox.value);
   });
 });
-btns.forEach((ele) => {
-  ele.addEventListener("click", () => {
-    btns.forEach((ele) => {
-      ele.classList.remove("active");
-    });
-    ele.classList.add("active");
-  });
-});
+
 clear.addEventListener("click", () => {
   tbox.value = "";
   dis.value = "";

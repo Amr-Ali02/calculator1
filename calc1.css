@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 body {
@@ -41,7 +41,7 @@ input:disabled,
 }
 #input:focus {
   outline: none;
-  box-shadow: 0 0 10px 1px rgb(0 0 0 / 10%) ;
+  box-shadow: 0 0 10px 1px rgb(0 0 0 / 10%);
 }
 input:disabled {
   text-align: right;
@@ -92,6 +92,9 @@ button {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
+button:active {
+  box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 20%) inset !important;
+}
 .clear,
 .eq {
   background-color: #1ec3cd;
@@ -107,8 +110,4 @@ button:not(.clear, .eq) {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-}
-
-.active {
-  box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 20%) inset !important;
 }
