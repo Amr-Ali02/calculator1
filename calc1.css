@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body {
   display: flex;
   justify-content: center;
@@ -11,7 +14,7 @@ body {
   height: fit-content;
   padding: 20px;
   background-color: white;
-  width: 250px;
+  width: 300px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -27,15 +30,18 @@ input:disabled,
   font-weight: bold;
   width: 100%;
   margin: 5px auto;
+  padding: 10px;
 }
 #input {
   text-align: right;
   font-size: 20px;
   background-color: white;
   border: none;
+  width: 100%;
 }
 #input:focus {
   outline: none;
+  box-shadow: 0 0 10px 1px rgb(0 0 0 / 10%) ;
 }
 input:disabled {
   text-align: right;
@@ -49,7 +55,7 @@ input:disabled {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  gap: 5px;
+  gap: 10px;
   justify-content: space-evenly;
 }
 
@@ -77,6 +83,8 @@ input:disabled {
   position: relative;
 }
 button {
+  font-weight: bold;
+  font-size: 20px;
   transition: 0.5s;
   background-color: white;
   -webkit-transition: 0.5s;
@@ -90,7 +98,7 @@ button {
   color: white;
 }
 button:not(.clear, .eq) {
-  box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 20%);
+  box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 10%);
   width: 50px;
   height: 50px;
   border: none;
