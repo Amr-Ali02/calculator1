@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  height: 100vh;
+}
+.container {
+  padding: 20px;
+  background-color: #333;
+  width: fit-content;
+}
+.calc {
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.op {
+  background-color: yellow;
+}
