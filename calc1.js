@@ -24,5 +24,5 @@ lt.addEventListener("click", () => {
   let tv = tbox.value.toString().slice(0, -1);
   tv.slice(0, -1);
   tbox.value = tv;
-  // for (let i = 0; i < tv.length; i++) {}
 });
+if (dis.value === "undefined") dis.value = "";
