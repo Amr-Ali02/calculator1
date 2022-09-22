@@ -19,6 +19,7 @@ eq.addEventListener("click", () => {
 });
 tbox.addEventListener("input", () => {
   dis.value = eval(tbox.value);
+  if (dis.value === "undefined") dis.value = "";
 });
 lt.addEventListener("click", () => {
   let tv = tbox.value.toString().slice(0, -1);
