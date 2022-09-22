@@ -1,4 +1,5 @@
 let btn = document.querySelectorAll("button:not(.eq,.clear,.lt)");
+let btns = document.querySelectorAll("button");
 let tbox = document.querySelector("#input");
 let eq = document.querySelector(".eq");
 let clear = document.querySelector(".clear");
@@ -8,6 +9,14 @@ btn.forEach((ele) => {
   ele.addEventListener("click", () => {
     tbox.value = tbox.value + ele.textContent;
     dis.value = eval(tbox.value);
+  });
+});
+btns.forEach((ele) => {
+  ele.addEventListener("click", () => {
+    btns.forEach((ele) => {
+      ele.classList.remove("active");
+    });
+    ele.classList.add("active");
   });
 });
 clear.addEventListener("click", () => {

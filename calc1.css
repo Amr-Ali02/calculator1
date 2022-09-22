@@ -6,31 +6,101 @@ body {
   height: 100vh;
 }
 .container {
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px rgb(0 0 0 / 10%);
   height: fit-content;
   padding: 20px;
-  background-color: #333;
-  width: fit-content;
+  background-color: white;
+  width: 250px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
-.calc {
-  margin: 10px auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 5px;
-}
-
-.op {
-  background-color: yellow;
+.inputs {
+  width: 100%;
+  margin: auto;
+  padding: 5px;
 }
 input:disabled,
 #input {
+  font-weight: bold;
   width: 100%;
   margin: 5px auto;
 }
 #input {
+  text-align: right;
+  font-size: 20px;
   background-color: white;
-  border-color: white;
+  border: none;
+}
+#input:focus {
+  outline: none;
 }
 input:disabled {
-  background-color: #b7b7b7;
+  text-align: right;
+  font-size: 30px;
+  color: #1ec3cd;
+  background-color: white;
+  border: none;
+}
+.calc {
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 5px;
+  justify-content: space-evenly;
+}
+
+.clear {
+  grid-area: 1 /1 / 2 / span 2;
+}
+.eq {
+  grid-area: 5/3/6 / span2;
+}
+.clear,
+.eq {
+  margin-top: 5%;
+  height: 80%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.op {
+  border: none;
+  color: #1ec3cd;
+}
+.lt {
+  position: relative;
+}
+button {
+  transition: 0.5s;
+  background-color: white;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.clear,
+.eq {
+  background-color: #1ec3cd;
+  color: white;
+}
+button:not(.clear, .eq) {
+  box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 20%);
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.active {
+  box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 20%) inset !important;
 }

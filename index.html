@@ -9,15 +9,18 @@
   </head>
   <body>
     <div class="container">
-      <input type="text" id="input" /><br />
-      <input type="text" disabled />
+      <div class="inputs">
+        <input type="text" id="input" /><br />
+        <input type="text" disabled />
+      </div>
       <div class="calc">
-        <button>1</button><button>2</button><button>3</button><button>+</button
-        ><button>4</button><button>5</button><button>6</button><button>-</button
+        <button class="clear op">C</button><button class="lt op">&lt;</button
+        ><button class="op">/</button><button>1</button><button>2</button
+        ><button>3</button><button class="op">+</button><button>4</button
+        ><button>5</button><button>6</button><button class="op">-</button
         ><button>7</button><button>8</button> <button>9</button
-        ><button>*</button> <button class="clear">C</button><button>0</button>
-        <button class="eq">=</button><button>/</button>
-        <button class="lt">&lt;</button>
+        ><button class="op">*</button> <button>0</button> <button>.</button>
+        <button class="eq op">=</button>
       </div>
     </div>
     <script src="calc1.js"></script>
