@@ -21,3 +21,6 @@ body {
 .op {
   background-color: yellow;
 }
+input:disabled {
+  margin: 5px auto;
+}
