@@ -6,6 +6,7 @@ body {
   height: 100vh;
 }
 .container {
+  height: fit-content;
   padding: 20px;
   background-color: #333;
   width: fit-content;
@@ -21,6 +22,8 @@ body {
 .op {
   background-color: yellow;
 }
-input:disabled {
+input:disabled,
+#input {
+  width: 100%;
   margin: 5px auto;
 }
